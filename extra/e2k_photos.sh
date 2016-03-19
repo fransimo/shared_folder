@@ -51,4 +51,3 @@ for f in ` find $origen -type f  ` ; do
 done
 IFS=$SAVEIFS
 
-bash ~/Dropbox/unix_tools/permisos_ml.sh
