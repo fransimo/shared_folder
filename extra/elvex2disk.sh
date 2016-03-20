@@ -1,6 +1,10 @@
 home=~/workspace/shared_folder/extra
 
-sudo mount -t cifs //192.168.1.6/data /datos/net/diskstationfsm/ -ousername=fran,password=gratis,uid=fran,gid=fran,forceuid,forcegid,nounix
+sudo mount -t cifs //192.168.1.6/data /datos/net/diskstationfsm/ -ousername=fran,password=gratis,uid=fran,gid=fran,forceuid,forcegid,nounix 2> /dev/null
+
+if [ ! -d /datos/net/diskstationfsm/d4 ] ; then
+	exit 1
+fi
 
 sudo rsync -avz  /datos/flickrGramas/jenkins/up_ok /datos/net/diskstationfsm/d4/Proyectos4/Dream/contacts
 
