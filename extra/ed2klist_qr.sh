@@ -20,7 +20,7 @@ for f in $* ; do
 
 	
 	echo Destino: $dest
-	qrencode -o $dest '${ed2}'	
+	qrencode -o $dest ${ed2}
 	echo ${ed2} >> ed2links.txt
 	
 	
