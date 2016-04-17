@@ -16,12 +16,12 @@ for f in $* ; do
 	base=${file%%.*}
 	e=${file##*.}
 	e=${e:0:3}
-	dest=$dest/${base}.png
+	dest=${base}.png
 
 	
 	echo Destino: $dest
 	qrencode -o $dest '${ed2}'	
-	echo ${ed2} >> $dest/ed2links.txt
+	echo ${ed2} >> ed2links.txt
 	
 	
 done
