@@ -1,6 +1,6 @@
 import hashlib
  
-def hash_file(self, file_path):
+def hash_file(file_path):
     """ Returns the ed2k hash of a given file. """
  
     md4 = hashlib.new('md4').copy
