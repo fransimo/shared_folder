@@ -5,7 +5,7 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 
-for f in ` $* ` ; do
+for f in $* ; do
 
 	echo $f
 	ed2=` ed2k_hash $f `
