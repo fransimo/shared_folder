@@ -23,5 +23,7 @@ sudo rsync -avz  /datos/media/mldonkey/in/1_FRAN_tech/emule_spy /datos/media/mld
 #borrar solo las que se han borrado en el nas
 sudo rsync -avz --delete  /datos/net/diskstationfsm/d4/Proyectos4/shared_folder /datos/media/mldonkey/in/1_FRAN_tech
 
+sudo rsync -avz --delete /datos/flickrGramas/backup /datos/net/diskstationfsm/d4/fg_backup4
+
 #asegurar permisos
 sudo bash ${home}/permisos_ml.sh
