@@ -1,7 +1,11 @@
 home=~/workspace/shared_folder/extra
 
-sudo mount -t cifs //192.168.1.6/data /datos/net/diskstationfsm/ -ousername=fran,password=gratis,uid=fran,gid=fran,forceuid,forcegid,nounix 2> /dev/null
+#si no esta montato hacer mount
+if [ ! -d /datos/net/diskstationfsm/d4 ] ; then
+	sudo mount -t cifs //192.168.1.6/data /datos/net/diskstationfsm/ -ousername=fran,password=gratis,uid=fran,gid=fran,forceuid,forcegid,nounix 2> /dev/null
+fi
 
+#si siegue sin estar disponible salir con error
 if [ ! -d /datos/net/diskstationfsm/d4 ] ; then
 	exit 1
 fi
