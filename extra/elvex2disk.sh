@@ -1,4 +1,4 @@
-home=~/workspace/shared_folder/extra
+home=/home/fran/workspace/shared_folder/extra
 
 #si no esta montato hacer mount
 if [ ! -d /datos/net/diskstationfsm/d4 ] ; then
