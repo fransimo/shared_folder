@@ -1,9 +1,9 @@
-# shared_folder
+# Shared folder ("Red box")
 
 ## Motivation
 
 The original [found photography](https://en.wikipedia.org/wiki/Found_photography) was about photos that were never intended to be public. 
-Their authors didn't publish them. They had been kept in boxes for years.
+Their authors didn't publish them. They had been kept in boxes for years. (1)
 
 I asked myself: Where can I find these images? Where are the digital images that were never intended to be shown? 
 Should I buy obsolete hard drives at flea markets? Should I maliciously hack online computers?
@@ -41,8 +41,8 @@ privacy.
 
 # Installation
 
-Works on any debian distribution. I'm using raspianOs on two raspberries (3 and 4). One of them (4) is scheduling the 
-searches and classifications through Apache Airflow. The other one (3) is connected to the mldonkey network.
+Works on any debian distribution. I'm using *Raspberry Pi OS* on two raspberries (3 and 4). One of them is scheduling the 
+searches and classifications through Apache Airflow. The other one is connected to the mldonkey network.
 
 For documentation and sharing I found more useful to publish a notebook.
 
@@ -59,3 +59,9 @@ searches and downloads.
 
 [organize.sh](organize.sh) moves out the downloaded files to a non-sharing location and try to find the camera's 
 serial number and model to classify. Also groups the .doc/.docx/.pdf files. 
+
+# Notes
+1. Recent works about found photography on the internet space used flickr and other online sharing sites were people 
+   intentionally publish their photos.
+   
+1. [Amazon list](https://www.amazon.es/hz/wishlist/ls/3V4T6A4IYFVWZ?ref_=wl_share) of books about Found Photography.
